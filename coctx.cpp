@@ -111,7 +111,7 @@ int coctx_make( coctx_t *ctx,coctx_pfn_t pfn,const void *s,const void *s1 )
 
 	return 0;
 }
-#elif defined(__x86_64__)
+#elif defined(__x86_64__)	// 64位指令集
 int coctx_make( coctx_t *ctx,coctx_pfn_t pfn,const void *s,const void *s1 )
 {
 	char *sp = ctx->ss_sp + ctx->ss_size;
